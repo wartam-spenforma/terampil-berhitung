@@ -52,6 +52,23 @@
     .logo { font-size: 54px; line-height: 1; filter: drop-shadow(0 8px 8px rgba(0,0,0,.14)); }
     h1 { position: relative; margin: 14px 0 8px; font-size: clamp(28px, 5vw, 46px); letter-spacing: -.8px; }
     .hero p { position: relative; max-width: 620px; margin: 0 auto; color: rgba(255,255,255,.88); font-size: clamp(15px, 2vw, 18px); }
+    .database-link {
+      display: inline-flex;
+      position: relative;
+      align-items: center;
+      gap: 9px;
+      margin-top: 22px;
+      padding: 11px 18px;
+      border: 1px solid rgba(255,255,255,.42);
+      border-radius: 999px;
+      color: white;
+      font-size: 14px;
+      font-weight: 800;
+      text-decoration: none;
+      background: rgba(255,255,255,.16);
+      transition: background .2s ease, transform .2s ease;
+    }
+    .database-link:hover { transform: translateY(-2px); background: rgba(255,255,255,.27); }
 
     .games {
       display: grid;
@@ -124,6 +141,7 @@
       <div class="logo" aria-hidden="true">🧮</div>
       <h1 id="judul">Terampil Hitung Cepat</h1>
       <p>Pilih permainan matematika yang ingin kamu mainkan dan latih kemampuan berhitungmu.</p>
+      <a class="database-link" href="https://drive.google.com/drive/folders/1ZprzxZGBcUPEdcxhvF5qfKHmSu9-UFXd?usp=sharing" target="_blank" rel="noopener">📁 Buka Database</a>
     </section>
 
     <section class="games" aria-label="Daftar permainan">

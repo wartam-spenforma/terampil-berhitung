@@ -560,15 +560,21 @@
         margin-top: 10px;
     }
 
-#view-game #score-submit-container > / {
-        flex: 1;
+#view-game #score-submit-container > * {
         box-sizing: border-box;
     }
 
+#view-game #submitAnswer {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
 #view-game #score-container {
+        flex: 0 0 120px;
+        min-width: 120px;
         background-color: #F44336;
         color: white;
-        padding: 15px;
+        padding: 15px 10px;
         border-radius: 8px;
         font-size: 1.2em;
         font-weight: bold;
@@ -579,6 +585,12 @@
         margin-top: 0;
         margin-bottom: 0;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        white-space: nowrap;
+        gap: 4px;
+    }
+
+#view-game #score-container #score {
+        display: inline-block;
     }
 
 #view-game #keypad-container {
